@@ -1,0 +1,9 @@
+.navbar-brand {
+    color: white;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #FF0000;
+
+}
