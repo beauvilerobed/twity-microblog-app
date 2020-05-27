@@ -1,10 +1,8 @@
-
+<a href="{{ url_for('user', username=post.author.username) }}">
     <table class="table">
         <tr>
             <td width="70px">
-                <a href="{{ url_for('user', username=post.author.username) }}">
                     <img src="{{ post.author.avatar(70) }}" />
-                </a>
             </td>
             <td>
                 <a href="{{ url_for('user', username=post.author.username) }}">
@@ -16,3 +14,4 @@
             </td>
         </tr>
     </table>
+</a>

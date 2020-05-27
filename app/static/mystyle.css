@@ -1,6 +1,5 @@
 html body {
-background-color: #2cb5e8;   
-background-image: radial-gradient(#d0d6d5 0%, #1fc8db 40%,#2cb5e8 80%);
+background-color: #3f3d3d;   
 background-repeat: no-repeat;
 color: white;
 Opacity: 100;
@@ -16,14 +15,55 @@ Opacity: 100;
 
 }
 
-.table:hover{
-    background-color: whitesmoke;
+table{
+    background-color: rgb(235, 229, 229);
     color: black;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    margin-top: 10px;
+    border-style: hidden;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.td {
+    padding: 20px;
+}
+
+td:hover {
+    background-color: rgb(255, 255, 255);
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px
 }
 
 a{
-    color: rgb(7, 7, 160);
+    color: rgb(65, 65, 255);
+    text-decoration: none;
 }
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
 
 img{
     float: left;
