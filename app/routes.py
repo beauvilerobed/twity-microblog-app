@@ -100,6 +100,13 @@ def user(username):
                            next_url=next_url, prev_url=prev_url)
     #end of pagingation//
 
+# load the requested user and then render a template with it.
+@app.route('/user/<username>/popup')
+@login_required
+def user_popup(username):
+    user = User.query.filter_by(username=username).first_or_404()
+    return render_template('user_popup.html', user=user)
+
 from datetime import datetime
 
 @app.before_request
